@@ -10,8 +10,41 @@ body {
   justify-content: center;
 
   background-size: 1000px;
-  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  /* background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg"); */
+  background-color: pink;
   background-position: center center;
+}
+h1{
+  position: absolute;
+  top: 30px;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+h1::before{
+  content: '';
+  position: absolute;
+  left: 110%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg,transparent 0%, #FFC0CB 5%, #FFC0CB 100%);
+  animation: animate 20s linear forwards;
+}
+@keyframes animate 
+{
+  0%{
+
+    left: 110%
+  }
+  100%
+  {
+    left: -20%
+  }
+}
+h1 span{
+  color: red;
 }
 
 .paper {
