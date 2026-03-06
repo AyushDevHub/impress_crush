@@ -89,7 +89,7 @@ papers.forEach(paper => {
 });
 
 const typedSpan = document.getElementById("typed")
-const totype = ["Ladki", "Shivu Da", "", "Kutti"]
+const totype = ["Priyanshu", "", "Kutta"]
 
 const delayTyping_char = 150;
 const delayErasing_text = 100;
